@@ -19,7 +19,11 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
+    ["<Enter>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    -- ["<C-q>"] = false,
+    ["<C-q>"] = require("telescope.builtin").buffers,
+    ["<C-p>"] = require("telescope.builtin").find_files,
   },
   t = {
     -- setting a mapping to false will disable it
