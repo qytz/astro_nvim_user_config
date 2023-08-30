@@ -5,12 +5,13 @@ return {
     relativenumber = true, -- sets vim.opt.relativenumber
     number = true, -- sets vim.opt.number
     spell = false, -- sets vim.opt.spell
+    autowriteall = true,
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
-    completeopt = 'menu,menuone,noinsert',
-    encoding = 'utf8',
-    fileencoding = 'utf8',
-    fileencodings = 'utf-8,gb18030,default'
+    completeopt = "menu,menuone,noinsert",
+    encoding = "utf8",
+    fileencoding = "utf8",
+    fileencodings = "utf-8,gb18030,default",
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader

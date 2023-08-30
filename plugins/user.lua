@@ -9,4 +9,15 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "Pocco81/auto-save.nvim",
+    config = function()
+      require("auto-save").setup {
+        enabled = true,
+        -- trigger_events = {"InsertLeave", "TextChanged"},
+        -- your config goes here
+        -- or just leave it empty :)
+      }
+    end,
+  },
 }
